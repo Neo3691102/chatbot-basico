@@ -1,0 +1,39 @@
+header nav {
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+header nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: 25px;
+  left: 20px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+header nav ul li {
+  margin: 0 20px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+header nav ul li:hover {
+  color: #ff6600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}/*# sourceMappingURL=style.css.map */
