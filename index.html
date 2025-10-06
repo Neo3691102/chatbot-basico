@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mantenimiento de motos</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav>
         <img src="assets/iconomoto.jpg" alt="icono moto" />
         <ul>
-          <li>Servicios</li>
-          <li>Sobre Nosotros</li>
-          <li>Contacto</li>
+          <li><a href="#Servicios">Servicios</a></li>
+          <li><a href="#AboutUs">Sobre Nosotros</a></li>
+          <li><a href="#Contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -41,11 +45,42 @@
           </div>
         </div>
       </section>
+
+      <i id="chatbotbutton" class="bx bx-robot"></i>
+
+      <section id="chatbot" class="chatbot">
+        <i id="closebutton" class='bx  bx-x'  ></i>
+        <div class="chatbot__header">
+           
+          <h3>Asistente Virtual</h3>
+          
+        </div>
+        <div class="chatbot__messages" id="chatbotmessages">
+          
+          <div class="bot-message">
+            <i class="bx bx-robot"></i>  
+            <p>Hola! ¿En qué puedo ayudarte hoy?</p>
+          </div>
+
+         
+
+          
+
+        </div>
+        <div class="chatbot__input">
+          <input
+            type="text"
+            id="userinput"
+            placeholder="Escribe tu mensaje..."
+          />
+          <button id="send-button">Enviar</button>
+        </div>
+      </section>
     </main>
 
     <footer>
       <h2>Nuestros Servicios</h2>
-      <section class="servicios">
+      <section id="Servicios" class="servicios">
         <div class="servicios__card">
           <h3>Cambio de Aceite</h3>
           <p>
@@ -73,7 +108,7 @@
         </div>
       </section>
 
-      <section class="sobrenosotros">
+      <section id="AboutUs" class="sobrenosotros">
         <h2>Sobre Nosotros</h2>
         <p>
           Somos un equipo de mecánicos apasionados por las motos, dedicados a
@@ -82,7 +117,7 @@
         <img src="assets/equipo.jpg" alt="equipo de mecanicos" />
       </section>
 
-      <section class="contacto">
+      <section id="Contacto" class="contacto">
         <h2>Contacto</h2>
         <form action="#">
           <label for="name">Nombre:</label>
@@ -98,5 +133,7 @@
         </form>
       </section>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
