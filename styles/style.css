@@ -27,10 +27,26 @@ header nav ul li {
   cursor: pointer;
   transition: color 0.3s ease;
 }
+header nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
 header nav ul li:hover {
   color: #ff6600;
 }
 
+main #chatbotbutton {
+  background-color: skyblue;
+  padding: 9px;
+  border-radius: 50%;
+  font-size: 72px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: whitesmoke;
+  margin: 0 auto;
+  cursor: pointer;
+}
 main .hero {
   width: 100%;
   height: 90vh;
@@ -84,6 +100,95 @@ main .hero__content div button {
 main .hero__content div button:hover {
   background-color: lightgray;
   padding: 10px 20px;
+}
+main .chatbot {
+  display: none;
+  width: 300px;
+  height: 400px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: white;
+  border-radius: 9px;
+}
+main .chatbot #closebutton {
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  text-align: center;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  cursor: pointer;
+  font-size: 21px;
+  color: white;
+  border-radius: 50%;
+}
+main .chatbot__header h3 {
+  text-align: center;
+  padding: 12px;
+  background-color: skyblue;
+  color: white;
+  border-radius: 9px 9px 0 0;
+}
+main .chatbot__messages {
+  width: 100%;
+  height: 320px;
+  overflow-y: scroll;
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+main .chatbot__messages .bot-message {
+  display: flex;
+  gap: 9px;
+  background-color: skyblue;
+  border-radius: 3px;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+main .chatbot__messages .bot-message i {
+  font-size: 27px;
+  color: gray;
+  padding: 3px;
+}
+main .chatbot__messages .user-message {
+  background-color: skyblue;
+  color: white;
+  padding: 3px;
+}
+main .chatbot__messages .user-message i {
+  color: white;
+}
+main .chatbot__input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  gap: 6px;
+  padding: 6px;
+}
+main .chatbot__input input {
+  width: 80%;
+  padding: 9px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+main .chatbot__input button {
+  width: 20%;
+  border: none;
+  background-color: skyblue;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .chatbot__input button:hover {
+  background-color: deepskyblue;
 }
 
 footer {
