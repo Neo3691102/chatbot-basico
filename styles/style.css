@@ -119,6 +119,14 @@ main .hero__content div button:hover {
   padding: 10px 20px;
 }
 @media screen and (max-width: 480px) {
+  main .hero__content div {
+    flex-direction: column;
+  }
+  main .hero__content div input {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
   main .hero {
     flex-direction: column;
     height: auto;
@@ -263,6 +271,20 @@ footer .servicios__card img {
      object-fit: cover;
   border-radius: 6px;
   margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  footer .servicios {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  footer .servicios__card {
+    width: 300px;
+    height: auto;
+  }
+  footer .servicios__card img {
+    width: 250px;
+    height: 150px;
+  }
 }
 footer .sobrenosotros {
   margin: 20px;
