@@ -34,6 +34,23 @@ header nav ul li a {
 header nav ul li:hover {
   color: #ff6600;
 }
+@media screen and (max-width: 480px) {
+  header nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+  header nav img {
+    position: static;
+    margin-bottom: 10px;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li {
+    margin: 10px 0;
+  }
+}
 
 main #chatbotbutton {
   background-color: skyblue;
@@ -100,6 +117,24 @@ main .hero__content div button {
 main .hero__content div button:hover {
   background-color: lightgray;
   padding: 10px 20px;
+}
+@media screen and (max-width: 480px) {
+  main .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+  main .hero__image img {
+    width: 300px;
+    height: 200px;
+  }
+  main .hero__content {
+    width: 80%;
+    height: auto;
+  }
+  main .hero__content input {
+    width: 200px;
+  }
 }
 main .chatbot {
   display: none;

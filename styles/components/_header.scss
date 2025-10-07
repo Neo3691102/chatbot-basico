@@ -34,5 +34,21 @@ header {
                 }
             }
         }
+
+        @media screen and (max-width: 480px) {
+            flex-direction: column;
+            height: auto;
+            padding: 10px 0;
+            img{
+                position: static;
+                margin-bottom: 10px;
+            }
+            ul{
+                flex-direction: column;
+                li{
+                    margin: 10px 0;
+                }
+            }
     }
+}
 }

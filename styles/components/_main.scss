@@ -77,7 +77,26 @@ main{
             }
         
     
-        
+        @media screen and (max-width: 480px){
+            flex-direction: column;
+            height: auto;
+            padding: 20px 0;
+            &__image{
+                img{
+                    width: 300px;
+                    height: 200px;
+                }
+            }
+            &__content{
+                width: 80%;
+                height: auto;
+
+                input{
+                    width: 200px;
+                }
+            }
+
+        }
     }
 
     .chatbot{
