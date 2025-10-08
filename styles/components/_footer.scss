@@ -126,5 +126,19 @@ footer{
                 text-decoration: underline;
             }
         }
+
+        @media screen and (max-width: 480px){
+            form{
+                input, textarea{
+                    width: 300px;
+                }
+            }
+            p{
+                font-size: 18px;
+            }
+            a{
+                font-size: 18px;
+            }
     }
+}
 }
