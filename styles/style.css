@@ -352,6 +352,17 @@ footer .contacto a {
 footer .contacto a:hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 480px) {
+  footer .contacto form input, footer .contacto form textarea {
+    width: 300px;
+  }
+  footer .contacto p {
+    font-size: 18px;
+  }
+  footer .contacto a {
+    font-size: 18px;
+  }
+}
 
 * {
   margin: 0;
