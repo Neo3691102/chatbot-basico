@@ -199,5 +199,20 @@ main{
                 }
             }
         }
+
+         @media screen and (max-width: 480px){
+            width: 90%;
+            right: 5%;
+            
+            #closebutton{
+                width: 25px;
+                height: 25px;
+                font-size: 18px;
+                padding: 2px;
+            }
+            &__messages{
+                height: 200px;
+            }
+        }
     }
 }
