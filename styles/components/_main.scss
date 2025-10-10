@@ -10,6 +10,12 @@ main{
         color: whitesmoke;
         margin: 0 auto;
         cursor: pointer;
+        @media screen and (max-width: 480px){
+            font-size: 48px;
+            padding: 6px;
+            bottom: 20px;
+            right: 20px;
+        }
     }
     .hero{
         width: 100%;
