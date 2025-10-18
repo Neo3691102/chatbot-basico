@@ -130,6 +130,11 @@ main .hero__content div button:hover {
   font-weight: bold;
 }
 @media screen and (max-width: 480px) {
+  main .hero__content div button {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 480px) {
   main .hero__content div {
     flex-direction: column;
   }
