@@ -367,10 +367,18 @@ footer .contacto form button {
   border-radius: 5px;
   background-color: white;
   cursor: pointer;
+  background-color: rgb(231, 152, 3);
+  font-weight: bold;
 }
 footer .contacto form button:hover {
   background-color: lightgray;
   padding: 10px 20px;
+}
+@media screen and (max-width: 480px) {
+  footer .contacto form button {
+    width: 300px;
+    height: 42px;
+  }
 }
 footer .contacto p {
   font-size: 21px;
