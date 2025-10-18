@@ -322,7 +322,7 @@ footer .sobrenosotros {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 36px;
 }
 footer .sobrenosotros p {
   font-size: 21px;
